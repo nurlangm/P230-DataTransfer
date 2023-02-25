@@ -1,0 +1,21 @@
+﻿@using DataTransfer.Models;
+@model List<Hotels>
+<div class="rooms-cards-wrapper">
+    @foreach (var hotel in Model)
+    {
+        <div class="box">
+            <div class="room-card">
+                <img src="@hotel.CoverPhoto" width="350" height="233" class="room-img">
+                <div class="room-card-content">
+                    <p class="room-card-paragraph">@hotel.Name</p>
+                    <p class="room-card-paragraph">@hotel.Description</p>
+                    <p class="room-price">$@hotel.Price</p>
+                    <button class="room-card-btn">
+                        Book Now
+                        <i class="fas fa-angle-double-right btn-arrow"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+</div>

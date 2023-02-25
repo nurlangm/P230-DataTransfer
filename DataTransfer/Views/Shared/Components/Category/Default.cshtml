@@ -1,0 +1,13 @@
+﻿@using DataTransfer.Models;
+@model List<Category>
+<div class="category">
+    <ul style="list-style-type:none;display:flex;justify-content:center">
+        @foreach (var item in Model)
+        {
+            <li style="align-items: center;cursor:pointer;justify-content: center;display: flex;height: 40px;width: 200px;background-color: #f4f4f4;margin-right:6rem;font-size:18px">
+                @item.Name
+            </li>
+        }
+    </ul>
+</div>
+</div>

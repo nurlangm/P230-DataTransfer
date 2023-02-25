@@ -1,0 +1,51 @@
+﻿@using DataTransfer.Models;
+<header class="header">
+    <div class="brand">
+        <div>
+            <img src="https://res.cloudinary.com/dddptppkn/image/upload/v1668240279/myfolder/mysubfolder/crown_urgqku.png" width="80">
+        </div>
+        <h3 class="hotel-heading">Mammedlee Hotel</h3>
+    </div>
+
+    <div class="banner">
+        <h1 class="banner-heading">
+            Welcome to Mammedleee Hotel
+         <h1>
+             <h1 style="text-align:center">
+                    <p class="banner-paragraph">This is the Category Page </p>
+                    <a class="banner-button" href="https://localhost:7254/" style="color:black;text-decoration:none;font-weight:300">Go Main Page</a>
+             </h1>  
+    </div>
+</header
+<body>
+ <style>
+.top {
+  text-align: center;
+  padding-top: 4rem;
+}
+.top h4 {
+  color: #eb4d4b;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 9px;
+}.top .fake {
+  width: 80px;
+  height: 4px;
+  background-color: #eb4d4b;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+</style>
+<body>
+    <div class="top">
+        <h4>THE CATEGORIES</h4>
+        <h2>Categories</h2>
+        <div class="fake"></div>
+    </div>
+       <ul style="margin-bottom:10rem">
+            @await Component.InvokeAsync("Category")
+       </ul>
+         <a class="rooms-btn" style="color:black;text-decoration:none;display:block;margin:auto;margin-bottom:1rem" href="https://localhost:7254/room">Check All Rooms</a>
+</body>
+</body>
